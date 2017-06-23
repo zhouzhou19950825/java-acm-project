@@ -89,7 +89,7 @@ protected static final ConcurrentHashMap<String, Boolean> EVENT = new Concurrent
 ```
 public abstract Class<?> returnClass(String resource,String className);
 
-	public abstract byte[] returnByte(String resource,String className);
+public abstract byte[] returnByte(String resource,String className);
 ```
 说明：
 >根据不同的需要返回不同的类型（Class以及byte[]）
