@@ -53,7 +53,18 @@ DealResult
 
 Test
 原来线程实现:
+### 启动方法
 
+```
+// 初始化启动类
+// 获取结果
+DealResult deal = DealStart.getResult( null, d, sb.toString());
+		if (deal.getCode() == 0) {
+			System.out.println(Thread.currentThread().getName() + "解析成功，正确率为:" + deal.getSuccess() * 100 + "%");
+		} else if (deal.getCode() == 1) {
+			System.out.println(Thread.currentThread().getName() + "解析失败，错误信息:" + deal.getError());
+		}
+```
 ### 快速启动
 
 ```
